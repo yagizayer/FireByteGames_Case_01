@@ -7,6 +7,7 @@
 ### What is this game?
 This is a basic collision, OOP, SO and EDP Test from FireByte Games.
 The goal is decide whether i can manage these topics or not.
+
 ![gif](Readme_Resources/gif_01.gif)
 
 ## To designer
