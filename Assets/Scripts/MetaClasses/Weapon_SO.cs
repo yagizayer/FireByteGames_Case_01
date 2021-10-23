@@ -10,7 +10,7 @@ namespace YagizAYER
     public class Weapon_SO : ScriptableObject
     {
         [Header("Weapon Variables")]
-        [SerializeField] private WeaponType _weaponType = WeaponType.TwoDimentional;
+        [SerializeField] private WeaponType _weaponType = WeaponType.TwoDimensional;
         [SerializeField] private Sprite _defaultSprite;
         [SerializeField] private Color _defaultColor;
         [SerializeField, Range(.01f, 360f)] private float _speed = 15f;

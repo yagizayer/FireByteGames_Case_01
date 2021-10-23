@@ -8,17 +8,17 @@ namespace YagizAYER
         /// </summary>		
         Null = 0,
         /// <summary>
-        /// One dimentional Weapons Ex. bullets, arrows
+        /// One dimensional Weapons Ex. bullets, arrows
         /// </summary>		
-        OneDimentional = 10,
+        OneDimensional = 10,
         /// <summary>
-        /// One dimentional Weapons Ex. Swords, Lightsabers
+        /// One dimensional Weapons Ex. Swords, Lightsabers
         /// </summary>		
-        TwoDimentional = 20,
+        TwoDimensional = 20,
         /// <summary>
-        /// One dimentional Weapons Ex. Bombs, Flamethrowers
+        /// One dimensional Weapons Ex. Bombs, Flamethrowers
         /// </summary>		
-        ThreeDimentional = 30,
+        ThreeDimensional = 30,
 
     }
 }
