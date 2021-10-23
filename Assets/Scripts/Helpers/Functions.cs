@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.AI;
 using UnityEngine;
 using YagizAYER.Helper.MetaClasses;
+using System;
 
 namespace YagizAYER
 {
@@ -64,6 +65,11 @@ namespace YagizAYER
                     excludedIndexes.Add(randomIndex);
                 }
             }
+            /// <summary>
+            /// Returns non-repetative random list from given int object pool
+            /// </summary>
+            /// <param name="size">Length of list to be return.</param>
+            /// <returns>List with given int type</returns>
             public List<int> GetUniqueRandomIntList(int size)
             {
                 List<int> result = new List<int>();
@@ -71,7 +77,32 @@ namespace YagizAYER
                     result.Add(i);
                 return GetUniqueRandomList<int>(result, size);
             }
+            /// <summary>
+            /// Shakes Given object for given duration and magnitude
+            /// </summary>
+            /// <param name="targetObject">Object to Shake</param>
+            /// <param name="duration">Shake duration</param>
+            /// <param name="magnitude">Shake magnitude</param>
+            public void Shake(Transform targetObject, float duration = .1f, float magnitude = 5)
+            {
+                StartCoroutine(ShakingCamera(targetObject, duration, magnitude));
+            }
 
+            private IEnumerator ShakingCamera(Transform targetObject, float duration = .1f, float magnitude = 5)
+            {
+
+                Vector3 startPos = targetObject.transform.position;
+                float timeElapsed = 0;
+                while (timeElapsed < duration)
+                {
+                    float x = UnityEngine.Random.Range(-1, 1) * magnitude;
+                    float y = UnityEngine.Random.Range(-1, 1) * magnitude;
+                    targetObject.transform.localPosition = new Vector3(x, y, startPos.z);
+                    timeElapsed += Time.deltaTime;
+                    yield return null;
+                }
+                targetObject.transform.position = startPos;
+            }
         }
     }
 }

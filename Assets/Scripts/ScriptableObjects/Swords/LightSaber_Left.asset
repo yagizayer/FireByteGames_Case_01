@@ -17,4 +17,4 @@ MonoBehaviour:
   _defaultColor: {r: 0.89716524, g: 0.41960785, b: 0.2971698, a: 0.7647059}
   _speed: 15
   _rotationRange: {x: -120, y: 30}
-  _startAngle: -30
+  _startAngle: 0

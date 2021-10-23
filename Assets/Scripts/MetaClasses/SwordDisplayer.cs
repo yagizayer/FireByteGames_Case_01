@@ -23,9 +23,13 @@ namespace YagizAYER
         {
             Initialize();
         }
+        private void OnCollisionEnter(Collision other)
+        {
+            if (other.transform.CompareTag(transform.tag))
+                _gameManager.EventManager.InvokeCollisionEnterEvent();
+        }
         private void OnCollisionStay(Collision other)
         {
-            Debug.Log(other.transform.name);
             if (other.transform.CompareTag(transform.tag))
                 _gameManager.EventManager.InvokeCollisionEvent(other);
         }
