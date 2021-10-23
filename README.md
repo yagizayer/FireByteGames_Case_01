@@ -15,11 +15,14 @@ The goal is decide whether i can manage these topics or not.
 Game revolves around Game events, in game scene there is 2 manager objects: 
 - GameManagement
 - EventManagement
+- SoundManagement
 #### Game Management
 Handles world issued problems and creates platform for not parented behaviours to act.
-In this case handles the Particle effects positioning.
+In this case handles the Particle effects positioning and Shake effect.
 #### Event Management
 Handles Asynchronous programming issues and lets all objects effect each other by event firing.
+#### Sound Management
+Handles Sound effects on impact.
 ### Objects
 There are 4 MetaClasses in this project : 
 - Weapon_SO : General Scriptable object class for all kinds of weapons.
