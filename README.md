@@ -2,7 +2,7 @@
 ## Platform and Engine
  - **Platform :** WebGL
  - **Engine :** Unity 2020.3.12f1
- - **Playable :** 
+ - **Playable :** [yagizayer.github.io/FireByteGames_Case_01](http://yagizayer.github.io/FireByteGames_Case_01)
 ## To reader
 ### What is this game?
 This is a basic collision, OOP, SO and EDP Test from FireByte Games.
