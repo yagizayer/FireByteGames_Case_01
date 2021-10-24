@@ -1,4 +1,4 @@
-# Tap To Shoot Game
+# Who Wants To Be JEDI?
 ## Platform and Engine
  - **Platform :** WebGL
  - **Engine :** Unity 2020.3.12f1
